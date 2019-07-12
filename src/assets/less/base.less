@@ -1,0 +1,142 @@
+@charset "utf-8";
+#app {
+    [class|=el] {
+        color: #354052;
+    }
+    body {
+        background-color: #EBF1F5;
+        color: #354052;
+    }
+    .content-box {
+        max-width: 100%;
+        margin: 16px;
+        background-color: #fff;
+        box-shadow: 0 3px 3px 0 #D8DFE5;
+        border-radius: 4px;
+        .content-title-box {
+            padding: 10px 23px;
+            font-size: 14px;
+            color: #354052;
+            line-height: 1;
+            border-bottom: 4px solid #ECF2F6;
+        }
+        .real-content-box {
+            overflow: hidden;
+        }
+    }
+}
+
+/* reset element-ui style */
+
+#app {
+    // .el-table--striped .el-table__body tr.el-table__row--striped.current-row td,
+    // .el-table__body tr.current-row>td,
+    // .el-table__body tr.hover-row.current-row>td,
+    // .el-table__body tr.hover-row.el-table__row--striped.current-row>td,
+    // .el-table__body tr.hover-row.el-table__row--striped>td,
+    // .el-table__body tr.hover-row>td {
+    //     background-color: #409eff;
+    // }
+    .el-tree__empty-block {
+        height: auto;
+    }
+    .el-table__empty-block {
+        height: auto;
+    }
+    .el-table {
+        th {
+            background-color: #DAE9FA;
+            .cell {
+                font-size: 14px;
+            }
+        }
+        td {
+            .cell {
+                font-size: 14px;
+            }
+        }
+    } // 日期时间控件尺寸重置
+    .el-date-editor.el-input,
+    .el-date-editor.el-input__inner {
+        width: 100%;
+    } // dialog 控件 高度限制在最高600
+    .el-dialog__body {
+        height: auto;
+        max-height: 546px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .imgfull .el-upload {
+        display: none;
+    }
+    .el-upload--picture-card {
+        width: 80px;
+        height: 80px;
+    }
+    .el-upload-list--picture-card .el-upload-list__item {
+        width: 80px;
+        height: 80px;
+    } // 上传控件获取焦点时没有颜色
+    .el-upload:focus {
+        border-color: #c0ccda;
+    } // 上传控件图标颜色
+    .el-upload--picture-card i {
+        color: #9BA3AF;
+    } // 上传控件文案文字样式
+    .el-upload__text {
+        font-size: 12px;
+        color: #9BA3AF;
+    } // 重置字体颜色后 有些不需要更改颜色
+    .el-input.is-disabled .el-input__inner {
+        color: #c0c4cc;
+    }
+    .el-form-item__error {
+        color: #f56c6c;
+    }
+    .el-button--primary {
+        color: #fff;
+    }
+    .el-upload-list__item-status-label .el-icon-check {
+        color: #fff;
+    }
+    .select-panel .el-dialog__header .el-dialog__title {
+        font-size: 14px;
+        color: #fff;
+    }
+    .el-upload-list__item-delete .el-icon-delete {
+        color: #fff;
+    }
+    .el-tree-node__expand-icon {
+        color: #c0c4cc;
+    }
+    .el-tree-node__expand-icon.is-leaf {
+        color: transparent;
+    }
+} // reset elementui out of #app
+// 树状结构空数据高度问题
+.el-tree__empty-block {
+    min-height: 28px;
+    height: auto;
+}
+
+.select-region-pop {
+    overflow: hidden;
+}
+
+.select-region-pop .el-select-dropdown__item {
+    padding: 0;
+    height: auto;
+}
+
+// 时间选择器控件不显示“此刻”
+.el-picker-panel__footer .el-button:first-child {
+    display: none;
+}
+// ----------------------------------common style--------------------------------------------------
+.mt4{
+    margin-top: 4px;
+}
+.icon-btn{
+    font-size: 12px;
+    margin-right: 5px;
+}

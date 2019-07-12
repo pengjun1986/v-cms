@@ -13,5 +13,17 @@ module.exports = {
   },
   parserOptions: {
     parser: 'babel-eslint'
+  },
+  // custom configuration
+  // global variables
+  globals: {
+    define: true,
+    Vue: true,
+    VueRouter: true,
+    Vuex: true,
+    axios: true,
+    ELEMENT: true,
+    moment: true,
+    $http: true
   }
 }
