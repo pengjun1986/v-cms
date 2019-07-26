@@ -5,7 +5,15 @@
       <el-breadcrumb-item>类别管理</el-breadcrumb-item>
     </el-breadcrumb>
     <div class="line"></div>
-    <el-button type="primary" @click="save">增加</el-button>
+    <el-form inline class="form__ct" label-width="112px">
+      <el-form-item label="名称:" prop="no">
+        <el-input  :maxlength="16" placeholder="请输入" clearable></el-input>
+      </el-form-item>
+      <el-form-item label-width="0">
+        <el-button type="primary" @click="save">查询</el-button>
+      </el-form-item>
+    </el-form>
+    <div class="line"></div>
   </div>
 </template>
 <script>
